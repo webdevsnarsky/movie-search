@@ -1,0 +1,26 @@
+@import '../scss/reset';
+@import '../scss/media';
+@import '../scss/header';
+@import '../scss/footer';
+@import '../scss/main';
+@import '../scss/keyboard';
+
+body,
+html {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+body {
+  background: url('../img/movie-bgc.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}

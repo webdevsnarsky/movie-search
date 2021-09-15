@@ -1,0 +1,111 @@
+.header-container {
+  width: 100%;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1280px;
+  padding: 20px 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header__title {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.search__wrapper {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+.search__magnifier {
+  position: relative;
+  z-index: 1;
+  width: 22px;
+  margin-right: -22px;
+  background-image: url('../img/magnifier.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.search__input {
+  padding: 0 26px;
+  outline: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.search__input:focus {
+  border: 1px solid red;
+  -webkit-box-shadow: 0 0 10px red;
+  box-shadow: 0 0 10px red;
+}
+
+.search__clear {
+  position: absolute;
+  z-index: 1;
+  right: 107px;
+  width: 29px;
+  height: 29px;
+  // margin-left: -22px;
+  background-image: url('../img/clear.svg');
+  background-repeat: no-repeat;
+  background-position: 1px 6px;
+  background-size: 20px;
+}
+
+.search__keyboard {
+  position: absolute;
+  top: -3px;
+  right: 141px;
+  z-index: 1;
+  background-image: url('../img/tool.svg');
+  width: 29px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: 1px 5px;
+  background-size: 26px;
+  cursor: pointer;
+}
+
+.search__keyboard-red {
+  background-image: url('../img/tool-red.svg');
+}
+
+.search__keyboard:hover {
+  background-image: url('../img/tool-red.svg');
+}
+
+.search__clear:hover {
+  background-image: url('../img/clear-red.svg');
+}
+
+.search__button {
+  margin-left: 10px;
+  padding: 0 30px;
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search__button:hover {
+  background-color: darkred;
+}
+
+.search__button:active {
+  background-color: salmon;
+}
